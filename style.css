@@ -1,0 +1,93 @@
+:root{
+
+--Green500: hsl(171, 66%, 44%);
+--Blue100: hsl(233, 100%, 69%);
+--Gray700: hsl(210, 10%, 33%);
+--Gray500: hsl(201, 11%, 66%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: var(--Gray700);
+
+}
+.container{
+max-width: 1100px;
+margin: 0 auto;
+padding: 0 20px;
+}
+.header-container{
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.header-container h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.header-container p{
+    font-size: 1.2rem;
+    color: var(--Gray500);
+}
+.download-buttons{
+    margin-top: 30px;
+}
+.logo{
+    margin-bottom: 20px;
+}
+button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--Green500);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-ios{
+    margin-right: 15px;
+}
+.btn-mac{
+    background-color: var(--Blue100);
+}
+.features-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 80px 0;
+}
+.features-container h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.features-container p{
+    font-size: 1.1rem;
+    color: var(--Gray500);
+    max-width: 600px;
+    margin: 0 auto;
+}
+.features-grid{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.feature-item{
+    width: 30%;
+    text-align: left;
+}
+.feature-item h2{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.feature-item p{
+    font-size: 1rem;
+    color: var(--Gray500);
+}
+.feature-image{
+    width: 30%;
+}
