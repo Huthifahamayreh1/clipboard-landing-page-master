@@ -1,0 +1,211 @@
+:root{
+
+--Green500: hsl(171, 66%, 44%);
+--Blue100: hsl(233, 100%, 69%);
+--Gray700: hsl(210, 10%, 33%);
+--Gray500: hsl(201, 11%, 66%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: var(--Gray700);
+
+}
+.container{
+max-width: 1100px;
+margin: 0 auto;
+gap: 20px;
+}
+.header-container{
+    background-image: url('/images/bg-header-desktop.png');
+    background-size: cover;
+    background-position: center;
+      text-align: center;
+}
+.download-buttons{
+    margin-top: 30px;
+}
+.logo{
+    margin-bottom: 20px;
+}
+button{
+    padding: 12px 24px;
+    border-radius: 40px;
+    border: none;
+    background-color: var(--Green500);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: inset   0 0 0 0 var(--Green500);
+}
+button:hover{
+    background-color: hsl(171, 66%, 34%);
+    filter: brightness(0.5)
+}
+.btn-ios{
+    margin-right: 15px;
+}
+.btn-mac{
+    background-color: var(--Blue100);
+}
+.features-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 80px 0;
+}
+
+.features-grid{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    gap: 100px;
+
+}
+.feature-item{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: left;
+    gap: 10px;
+    margin-top: 20px;
+    width: 60%;
+}
+.feature-img{
+    flex: 1;
+    margin-left: -140px;
+}
+.feature-img img{
+width: 100%;
+height: auto;
+}
+.feature-list{
+ flex: 1;
+align-items: center;
+text-align: left;
+    width: 100%;
+
+}
+.features-access{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 80px 0;
+}
+.features-access h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.features-access p{
+    font-size: 1.1rem;
+    color: var(--Gray500);
+    max-width: 600px;
+    margin: 0 auto;
+}
+.access-img{
+    margin-top: 40px;
+}
+.access-img img{
+    width: 100%;
+    height: auto;
+}
+.features-content h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.features-content p{
+    font-size: 1.1rem;
+    color: var(--Gray500);
+    max-width: 600px;
+    margin: 0 auto;
+}
+.supercharge-workflow{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 80px 0;
+        gap: 20px;
+
+}
+.workflow-tools{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 40px;
+}
+.tool-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+.tool-img{
+    width: 100%;
+    height: auto;
+;
+}
+.logo-workflw{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 40px;
+    gap: 80px;
+    
+}
+.logo-workflw.logo img{
+    width: 100%;
+    height: auto;
+}
+.btn-cat{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 80px 0;
+}
+footer {
+  background-color: #f5f6f8;
+  padding: 40px 0;
+}
+
+.footer-container {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.footer-logo { width: 55px; }
+.footer-links {
+  display: flex;
+  gap: 50px;
+  flex: 1;
+  margin-left: 80px;
+}
+
+.link-col { display: flex; flex-direction: column; gap: 10px; }
+.link-col a { text-decoration: none; color: var(--Dark-Grayish-Blue); }
+.link-col a:hover { filter: brightness(0.5); }
+
+.social-icons { display: flex; gap: 24px; }
+.social-icons img { width: 24px; height: 24px; }
+.social-icons img:hover { filter: brightness(0.5) ;  }
+
+@media (max-width: 768px) {
+  .header-container { background-image: url('./images/bg-header-mobile.png'); }
+  .download-buttons { flex-direction: column; }
+  .features-content { flex-direction: column; gap: 50px; }
+  .features-grid { flex-direction: column; gap: 50px; }
+  .feature-img{ margin-left: 0; } 
+  .feature-list { text-align: center; }
+  .workflow-tools { flex-direction: column; }
+  .logo-workflw { flex-direction: column;  width: 100%;}
+  .logo-workflw img { width: 50%; margin: 0 auto; }
+  .footer-container { flex-direction: column; gap: 40px; text-align: center; }
+  .footer-links { flex-direction: column; margin-left: 0; gap: 20px; }
+}
